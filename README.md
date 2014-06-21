@@ -36,7 +36,7 @@ postgresql://$OPENSHIFT_POSTGRESQL_DB_HOST:$OPENSHIFT_POSTGRESQL_DB_PORT
       <Connector port="8080" URIEncoding="UTF-8"/>
       ```
 4. Setup environmental variables :
-rhc env-set atlassian.plugins.enable.wait=300 -a wiki
+rhc env-set JAVA_OPTS="-Datlassian.plugins.enable.wait=300" -a wiki
 5. Hit http://wiki-needingmeds.rhcloud.com/wiki and follow instructions
 
 Changelog
