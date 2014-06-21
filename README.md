@@ -20,8 +20,7 @@ postgresql://$OPENSHIFT_POSTGRESQL_DB_HOST:$OPENSHIFT_POSTGRESQL_DB_PORT
   2. tar -xzf atlassian-confluence-5.5.2-war.tar.gz
   3. mv confluence-5.5.2 confluence-install
   4. Setup pre-installation properties
-    1. Editing confluence-install\confluence\WEB-INF\classes\confluence-init.properties by setting
-confluence.home=/var/lib/openshift/53a5620750044692bd000076/app-root/data/confluence
+    1. Editing confluence-install\confluence\WEB-INF\classes\confluence-init.properties by setting confluence.home=/var/lib/openshift/53a5620750044692bd000076/app-root/data/confluence
     2. Create a file called confluence.xml and save in the <tomcat-directory>/conf/Catalina/localhost sub-directory of Tomcat.
     3. Open your new wiki.xml file and add these lines:
       ```xml
@@ -38,6 +37,7 @@ confluence.home=/var/lib/openshift/53a5620750044692bd000076/app-root/data/conflu
       ```
 4. Setup environmental variables :
 rhc env-set atlassian.plugins.enable.wait=300 -a wiki
+5. Hit http://wiki-needingmeds.rhcloud.com/wiki and follow instructions
 
 Changelog
 ============================
