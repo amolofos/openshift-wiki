@@ -33,7 +33,9 @@ confluence.home=/var/lib/openshift/53a5620750044692bd000076/app-root/data/conflu
      </Context>
      ```
    4. Edit conf/server.xml and find the line where the Coyote HTTP Connector is defined. Add a URIEncoding="UTF-8"property to the connector:
-<Connector port="8080" URIEncoding="UTF-8"/>
+     ```xml
+      <Connector port="8080" URIEncoding="UTF-8"/>
+      ```
 
 Changelog
 ============================
