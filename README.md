@@ -21,13 +21,13 @@ postgresql://$OPENSHIFT_POSTGRESQL_DB_HOST:$OPENSHIFT_POSTGRESQL_DB_PORT
   3. mv confluence-5.5.2 confluence-install
   4. Setup pre-installation properties
     1. Editing confluence-install\confluence\WEB-INF\classes\confluence-init.properties by setting confluence.home=/var/lib/openshift/53a5620750044692bd000076/app-root/data/confluence
-    2. Create a file called confluence.xml and save in the <tomcat-directory>/conf/Catalina/localhost sub-directory of Tomcat.
+    2. Create a file called wiki.xml and save in the <tomcat-directory>/conf/Catalina/localhost sub-directory of Tomcat.
     3. Open your new wiki.xml file and add these lines:
       ```xml
       <Context
         path="/wiki"
         docBase="/var/lib/openshift/53a5620750044692bd000076/app-root/data/confluence-install/confluence"
-        debug="0"
+        debug=0
         reloadable="true">
       </Context>
       ```
