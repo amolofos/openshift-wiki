@@ -9,7 +9,7 @@ Build
 Assuming that user has a openshift account and has setup already the command line tools.
 
 1. rhc create-app wiki jbossews-2.0
-2. rhc create-app wiki jbossews-2.0
+2. rhc add-cartridge postgresql-9.2 --app wiki
    Root User: ***
    Root Password: ***
    Database Name: wiki
