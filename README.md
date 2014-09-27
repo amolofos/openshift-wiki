@@ -1,8 +1,8 @@
 openshift-wiki
 ============================
-The OpenShift `diy` cartridge documentation can be found at:
+The OpenShift `jbossews` cartridge documentation can be found at:
 
-http://openshift.github.io/documentation/oo_cartridge_guide.html#diy
+http://openshift.github.io/documentation/oo_cartridge_guide.html#tomcat
 
 Build
 ============================
@@ -21,6 +21,4 @@ Assuming that user has a openshift account and has setup already the command lin
 
 Changelog
 ============================
-2014-06-29 Initial deployment
-
-
+2014-09-27 Initial deployment
