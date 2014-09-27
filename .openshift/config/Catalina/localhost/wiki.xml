@@ -1,0 +1,5 @@
+﻿<Context path="/wiki"
+         docBase="/var/lib/openshift/5426b6a3e0b8cdcf3b000791/confluence"
+         debug="0"
+         reloadable="true">
+</Context>
